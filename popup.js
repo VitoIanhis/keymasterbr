@@ -69,8 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     for (let i = finalPassword.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [finalPassword[i], finalPassword[j]] = [finalPassword[j], finalPassword[i]];
+      const shuffleIndex = Math.floor(Math.random() * (i + 1));
+      [finalPassword[i], finalPassword[shuffleIndex]] = [finalPassword[shuffleIndex], finalPassword[i]];
     }
 
     return finalPassword.join('');
