@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
   generateBtn.addEventListener('click', () => {
     const options = getOptions();
     if (options.length < 4 || options.length > 128) {
-      alert('Password length must be between 4 and 128 characters');
+      alert('O tamanho da senha deve estar entre 4 e 128 caracteres');
       return;
     }
     const password = generatePassword(options);
@@ -94,12 +94,12 @@ document.addEventListener('DOMContentLoaded', () => {
     try {
       await navigator.clipboard.writeText(password);
       const originalText = copyBtn.textContent;
-      copyBtn.textContent = 'Copied!';
+      copyBtn.textContent = 'Copiado!';
       setTimeout(() => {
         copyBtn.textContent = originalText;
       }, 1500);
     } catch (err) {
-      console.error('Failed to copy password:', err);
+      console.error('Fala ao copiar a senha para a área de transferência:', err);
     }
   });
   generateBtn.click();
