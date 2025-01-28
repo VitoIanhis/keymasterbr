@@ -54,7 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
       password += chars[randomIndex];
     }
 
-    // Ensure at least one character from each selected type
     const finalPassword = Array.from(password);
     if (options.uppercase) {
       finalPassword[0] = uppercaseChars[Math.floor(Math.random() * uppercaseChars.length)];
@@ -79,8 +78,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   generateBtn.addEventListener('click', () => {
     const options = getOptions();
-    if (options.length < 4 || options.length > 128) {
-      alert('O tamanho da senha deve estar entre 4 e 128 caracteres');
+    if (options.length < 4 || options.length > 50) {
+      alert('O tamanho da sua senha deve estar entre 4 e 50 caracteres');
       return;
     }
     const password = generatePassword(options);
@@ -99,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
         copyBtn.textContent = originalText;
       }, 1500);
     } catch (err) {
-      console.error('Fala ao copiar a senha para a área de transferência:', err);
+      console.error('Falha ao copiar a senha para a área de transferência:', err);
     }
   });
   generateBtn.click();
