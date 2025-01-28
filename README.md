@@ -20,7 +20,7 @@
 
 1. Clique no ícone do KeyMasterBR na barra de extensões do Chrome para abrir o popup.
 2. Personalize suas preferências de senha:
-   - Escolha o tamanho da senha desejada (4 a 128 caracteres).
+   - Escolha o tamanho da senha desejada (4 a 50 caracteres).
    - Selecione os tipos de caracteres que deseja incluir: letras maiúsculas, letras minúsculas, números e caracteres especiais.
 3. Clique no botão **"Gerar senha segura!"** para criar sua senha.
 4. A senha aparecerá na área de exibição. Clique em **"Copiar para a área de transferência"** para copiá-la.
