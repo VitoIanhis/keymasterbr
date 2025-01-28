@@ -1,4 +1,4 @@
-# 🔐 KeyMasterBR - Extensão Chrome para Gerador de Senhas
+# 🔐 KeyMasterBR - Extensão Chrome para Gerar Senhas
 
 **KeyMasterBR** é uma extensão simples e segura para o Chrome que permite gerar senhas fortes e personalizadas diretamente no navegador com apenas um clique. 🚀
 
