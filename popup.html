@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KeyMasterBR - Gerador de senhas</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+</head>
+<body>
+  <div class="container">
+    <div class="brand">
+      <div class="logo">
+        <img src="icons/icon-32.png" alt="KeyMasterBR Logo" width="24" height="24">
+      </div>
+      <div class="brand-text">
+        <h1 class="brand-name">KeyMasterBR</h1>
+        <p class="brand-tagline">Senhas seguras em apenas um click!</p>
+      </div>
+    </div>
+    
+    <div class="input-group">
+      <label for="length">Password Length</label>
+      <div class="number-input">
+        <button type="button" class="number-button minus">-</button>
+        <input type="number" id="length" value="16" min="4" max="128">
+        <button type="button" class="number-button plus">+</button>
+      </div>
+    </div>
+
+    <div class="options">
+      <div class="checkbox-group">
+        <input type="checkbox" id="uppercase" checked>
+        <label for="uppercase">Letras maiúsculas</label>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="lowercase" checked>
+        <label for="lowercase">Letras minúsculas</label>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="numbers" checked>
+        <label for="numbers">Números</label>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="symbols" checked>
+        <label for="symbols">Caracteres especiais</label>
+      </div>
+    </div>
+
+    <button id="generate">Gerar senha segura!</button>
+    
+    <div class="password-display" id="password"></div>
+    
+    <button id="copy" class="copy-button">Copiar para a área de transferência</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
