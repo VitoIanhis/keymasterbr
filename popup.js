@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const updateLength = (newValue) => {
-    const value = Math.min(Math.max(newValue, 4), 128);
+    const value = Math.min(Math.max(newValue, 4), 50);
     lengthInput.value = value;
   };
 
